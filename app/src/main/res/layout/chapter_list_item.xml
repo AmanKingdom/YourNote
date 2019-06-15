@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:paddingHorizontal="10dp"
+        android:paddingTop="8dp"
+        android:id="@+id/chapterTextView"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:text="@string/chapter"
+        android:textSize="24sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="6dp"
+        android:background="#aa000000"
+        android:backgroundTint="@color/colorPrimaryDark" />
+</LinearLayout>

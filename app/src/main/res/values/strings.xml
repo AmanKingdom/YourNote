@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">YourNote</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="part">part</string>
+    <string name="word">word</string>
+    <string name="chapter">chapter</string>
+    <string name="playButton">播放</string>
+    <string name="import_csv">从csv导入数据</string>
+    <string name="setInformation">设置个人信息</string>
+    <string name="selectFile">选择文件</string>
+</resources>
