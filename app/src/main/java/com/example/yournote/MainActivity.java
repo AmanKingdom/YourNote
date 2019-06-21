@@ -17,6 +17,8 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.yournote.domain.Part;
@@ -55,9 +57,10 @@ public class MainActivity extends BaseActivity
         addWordFab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                Toast.makeText(MainActivity.this, "添加单词(该功能未开放,敬请期待)", Toast.LENGTH_SHORT).show();
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+//                Toast.makeText(MainActivity.this, "添加单词(该功能未开放,敬请期待)", Toast.LENGTH_SHORT).show();
+                AddWordActivity.actionStart(MainActivity.this);
             }
         });
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -78,6 +81,14 @@ public class MainActivity extends BaseActivity
 //layoutManager.setOrientation(LinearLayoutManager.HORIZONTAL);
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
+
+        final EditText mainSearchText = findViewById(R.id.mainSearchText);
+        mainSearchText.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                SearchActivity.actionStart(MainActivity.this);
+            }
+        });
     }
 
     private void initPartList(){
@@ -152,14 +163,6 @@ public class MainActivity extends BaseActivity
         } else if (id == R.id.import_csv) {
             Intent intent = new Intent(MainActivity.this, ImportCSVActivity.class);
             startActivity(intent);
-        } else if (id == R.id.nav_slideshow) {
-
-        } else if (id == R.id.nav_tools) {
-
-        } else if (id == R.id.nav_share) {
-
-        } else if (id == R.id.nav_send) {
-
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);

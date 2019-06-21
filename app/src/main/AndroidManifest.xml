@@ -17,7 +17,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".AddWordActivity"></activity>
+        <activity android:name=".SearchActivity" android:parentActivityName=".MainActivity"/>
+        <activity android:name=".AddWordActivity" android:parentActivityName=".MainActivity"/>
         <activity android:name=".SetInformationActivity" />
         <activity
             android:name=".ImportCSVActivity"

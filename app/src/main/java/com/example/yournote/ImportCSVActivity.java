@@ -213,7 +213,7 @@ public class ImportCSVActivity extends AppCompatActivity{
                     int chapter_id = find_chapter_cursor.getInt(find_chapter_cursor.getColumnIndex("id"));
                     Log.d(TAG, "initWordsOnDatabase: 找到part"+part+"的chapter："+chapter+"，id为："+chapter_id);
 
-                    String has_this_word_sql = "select * from table_word where word like '"+word+"'";
+                    String has_this_word_sql = "select * from table_word where word like '"+word+"' and chapter="+chapter_id;
 
                     Cursor has_this_word_cursor = db.rawQuery(has_this_word_sql, null);
                     if(has_this_word_cursor.getCount() == 0){

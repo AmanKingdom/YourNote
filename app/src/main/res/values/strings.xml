@@ -17,7 +17,7 @@
     <string name="word">word</string>
     <string name="chapter">chapter</string>
     <string name="playButton">播放</string>
-    <string name="import_csv">从csv导入数据</string>
+    <string name="import_csv">初始化单词库</string>
     <string name="setInformation">设置个人信息</string>
     <string name="selectFile">选择文件</string>
 </resources>
